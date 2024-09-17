@@ -1,0 +1,72 @@
+body {
+    background: #fafafa;
+}
+
+.hazman {
+    position: absolute;
+    bottom: 0;
+    background-image: url(../img/dino.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    bottom: 2px;
+    left: 10px;
+    z-index: 10;
+}
+
+.cactus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 2px;
+    background-image: url(../img/cactus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 5;
+}
+
+.ground {
+    position: absolute;
+    bottom: 10px;
+    background-image: url(../img/background.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    -webkit-animation: slideright 600s infinite linear;
+    width: 100vw;
+    height: 200px;
+    z-index: 1;
+}
+
+.end {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1000;
+    position: absolute;
+}
+
+.game-over-img{
+    margin-top: -100px;
+}
+
+.btn {
+    width: 71px;
+    height: 62px;
+    cursor: pointer;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0%;
+    }
+}
