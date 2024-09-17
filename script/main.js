@@ -54,7 +54,7 @@ function spawnCactus() {
 
     let timeMoving = setInterval(() => {
         if (positionCactus < -60) {
-            //Saiu da tela
+            //Leaving the screen
             clearInterval(timeMoving);
             ground.removeChild(cactus);
         } else if (positionCactus > 0 && positionCactus < 60 && position < 60) {
